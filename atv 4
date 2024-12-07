@@ -1,0 +1,119 @@
+# Portfolio Pessoal  
+
+## Objetivo  
+Criar um site estático simples para apresentar informações sobre um desenvolvedor.  
+
+## Funcionalidades  
+1. Página inicial com uma breve biografia.  
+2. Seção de Projetos, listando trabalhos recentes.  
+3. Seção de Contato com links para redes sociais.  
+
+## Cronograma  
+| Etapa               | Prazo          | Descrição                           |  
+|---------------------|----------------|-------------------------------------|  
+| Configuração        | Dia 1          | Configurar o repositório e arquivos |  
+| Página inicial      | Dias 2 a 3     | Criar estrutura básica (HTML/CSS)   |  
+| Seção Projetos      | Dia 4          | Adicionar detalhes dos projetos     |  
+| Seção Contato       | Dia 5          | Criar links e formulário de contato |
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Pessoal</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <header>
+    <h1>Bem-vindo ao meu Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#sobre">Sobre Mim</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="sobre">
+    <h2>Sobre Mim</h2>
+    <p>Olá! Sou um desenvolvedor apaixonado por criar soluções criativas e funcionais.</p>
+  </section>
+
+  <section id="projetos">
+    <h2>Meus Projetos</h2>
+    <div class="projeto">
+      <h3>Projeto 1</h3>
+      <p>Descrição breve do projeto.</p>
+    </div>
+    <div class="projeto">
+      <h3>Projeto 2</h3>
+      <p>Descrição breve do projeto.</p>
+    </div>
+  </section>
+
+  <section id="contato">
+    <h2>Contato</h2>
+    <p>Entre em contato comigo através das redes sociais:</p>
+    <ul>
+      <li><a href="#">LinkedIn</a></li>
+      <li><a href="#">GitHub</a></li>
+      <li><a href="#">E-mail</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Meu Nome</p>
+  </footer>
+</body>
+</html>
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+section {
+  padding: 2rem;
+  text-align: center;
+}
+
+section#sobre {
+  background: #f4f4f4;
+}
+
+section#projetos .projeto {
+  margin: 1rem 0;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
